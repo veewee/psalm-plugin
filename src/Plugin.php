@@ -33,6 +33,7 @@ final class Plugin implements PluginEntryPointInterface
     private function getHooks(): iterable
     {
         // Psl\Fun hooks
+        yield EventHandler\Fun\Pipe\PartialFunctionStoragePlugin::class;
         yield EventHandler\Fun\Pipe\PipeArgumentsProvider::class;
 
         // Psl\Iter hooks
